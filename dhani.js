@@ -1976,6 +1976,7 @@ console.log(color('[REGISTER]'), color(time, 'yellow'), 'Serial:', color(serialU
 //══════════[ FITUR KERANG ]══════════//
 
 case 'apakah':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 apakah = body.slice(1)
 const apa =['Iya','Tidak','Bisa Jadi','Hmmm gimana ya']
@@ -1983,6 +1984,7 @@ const kah = apa[Math.floor(Math.random() * apa.length)]
 Dhani.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 break
 case 'kapankah':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 kapankah = body.slice(1)
 const kapan =['Besok','Lusa','1 Hari Lagi','2 Hari Lagi','3 Hari Lagi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','7 Bulan Lagi','8 Bulan Lagi','9 Bulan Lagi','10 Bulan Lagi','11 Bulan Lagi','1 Tahun lagi','2 Tahun lagi','3 Tahun lag0i','4 Tahun lagi','5 Tahun lagi','6 Tahun lagi','7 Tahun lagi','8 Tahun lagi','9 Tahun lagi','10 Tahun lagi']
@@ -1990,6 +1992,7 @@ const koh = kapan[Math.floor(Math.random() * kapan.length)]
 Dhani.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
 break
 case 'bisakah':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 bisakah = body.slice(1)
 const bisa =['Bisa','Tidak Bisa','Hmmm gimana ya','Gak bisa ajg awoakwok','mana mungkin su','Bisa banget tuh, keren kayaknya']
@@ -1997,6 +2000,7 @@ const keh = bisa[Math.floor(Math.random() * bisa.length)]
 Dhani.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
 break
 case 'bagaimanakah':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 bagaimanakah = body.slice(1)
 const bagai =['Kita Kenal?','Nanya Terus deh','Tidak Tahu','Hmmm gimana ya','Cari Aja Sendiri','Kurang Tahu','Mana Saya Tahu, Saya kan ikan']
@@ -2004,6 +2008,7 @@ const mana = bagai[Math.floor(Math.random() * bagai.length)]
 Dhani.sendMessage(from, 'Pertanyaan : *'+bagaimanakah+'*\n\nJawaban : '+ mana, text, { quoted: mek })
 break
 case 'belah':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 if (args.length < 1) return reply('mana pertanyaan nya kak?\nContoh #belah roti')
 iyas = body.slice(7)
@@ -2016,6 +2021,7 @@ break
 
 case 'rate':
 case 'nilai':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 rate = body.slice(1)
 const ra =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2024,6 +2030,7 @@ Dhani.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, {
 break
 case 'ceksange':
 case 'sangecek':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 sange = body.slice(1)
 const sang =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2032,6 +2039,7 @@ Dhani.sendMessage(from, 'Pertanyaan : *'+sange+'*\n\nJawaban : '+ nge+'%', text,
 break
 case 'cekgay':
 case 'gaycek':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 gayy = body.slice(1)
 const gay =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2040,6 +2048,7 @@ Dhani.sendMessage(from, 'Pertanyaan : *'+gayy+'*\n\nJawaban : '+ yag+'%', text, 
 break
 case 'gantengcek':
 case 'cekganteng':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 ganteng = body.slice(1)
 const gan =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
@@ -2048,6 +2057,7 @@ Dhani.sendMessage(from, '*Pertanyaan :* '+ganteng+'\n*Jawaban :* '+ teng+'%', te
 break
 case 'cantikcek':
 case 'cekcantik':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 cantik = body.slice(1)
 const can =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
@@ -2056,6 +2066,7 @@ Dhani.sendMessage(from, '*Pertanyaan :* '+cantik+'\n*Jawaban :* '+ tik+'%', text
 break
 case 'cekwatak':
 case 'watakcek':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 watak = body.slice(1)
 const wa =['Penyayang','Pemurah','Pemarah','Pemaaf','Penurut','Baik','Baperan','Baik Hati','penyabar','UwU','top deh, pokoknya','Suka Membantu']
@@ -2066,6 +2077,7 @@ case 'cekhobby':
 case 'hobbycek':
 case 'cekhoby':
 case 'hobycek':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 hobby = body.slice(1)
 const hob =['Memasak','Membantu Atok','Mabar','Nobar','Sosmedtan','Membantu Orang lain','Nonton Anime','Nonton Drakor','Naik Motor','Nyanyi','Menari','Bertumbuk','Menggambar','Foto fotoan Ga jelas','Maen Game','Berbicara Sendiri']
@@ -2074,6 +2086,7 @@ Dhani.sendMessage(from, 'Pertanyaan : *'+hobby+'*\n\nJawaban : '+ by, text, { qu
 break
 case 'ceklesbi':
 case 'lesbicek':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 lesbii = body.slice(1)
 const lesbi =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2082,6 +2095,7 @@ Dhani.sendMessage(from, 'Pertanyaan : *'+lesbii+'*\n\nJawaban : '+ bi+'%', text,
 break
 case 'cekme':
 case 'me':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 reply("Tunggu!, Sedang Scan Number & Name")
 neme = args.join(" ")
@@ -2133,14 +2147,14 @@ Dhani.sendMessage(from, buff, image, {quoted: mek, caption: profile, contextInfo
 break
 case 'cekmati':
 case 'mati':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 if (!q) return reply('Siapa namanya?')
 predea = await axios.get(`https://api.agify.io/?name=${q}`)
 reply(`Nama : ${predea.data.name}\n*Mati Pada Umur :* ${predea.data.age} Tahun.\n\n_Cepet Cepet Tobat Bro Soalnya Mati ga ada yang tau_`)
 break
-
-
 case 'beban':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const ngee = groupMembers
@@ -2152,6 +2166,7 @@ membr.push(beb.jid)
 mentions(teks, membr, true)
 break 
 case 'babi':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const meg = groupMembers
@@ -2163,6 +2178,7 @@ membr.push(ba.jid)
 mentions(teks, membr, true)
 break
 case 'ngewe':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 jds = []
 const jdiid = groupMembers
@@ -2175,6 +2191,7 @@ jds.push(diaat.jid)
 mentions(teks, jds, true)
 break
 case 'sange':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const pff = groupMembers
@@ -2186,6 +2203,7 @@ membr.push(goo.jid)
 mentions(teks, membr, true)
 break
 case 'gay':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const aa = groupMembers
@@ -2197,6 +2215,7 @@ membr.push(ac.jid)
 mentions(teks, membr, true)
 break
 case 'wibu':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const baa = groupMembers
@@ -2208,6 +2227,7 @@ membr.push(bc.jid)
 mentions(teks, membr, true)
 break
 case 'terganteng':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const ca = groupMembers
@@ -2219,6 +2239,7 @@ membr.push(cc.jid)
 mentions(teks, membr, true)
 break
 case 'tercantik':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 membr = []
 const da = groupMembers
@@ -2230,6 +2251,7 @@ membr.push(dc.jid)
 mentions(teks, membr, true)
 break
 case 'jadian':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 jds = []
 jdii = groupMembers
@@ -2242,6 +2264,7 @@ jds.push(diaa.jid)
 mentions(teks, jds, true)
 break
 case 'suit':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 text1 = `Silakan pilih salah satu untuk bermain suit`
 text2 = `Semoga kakak menang`
@@ -2253,6 +2276,7 @@ but = [
 sendButMessage(from, text1, text2, but, {quoted: mek})
 break
 case 'suit2':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
 if (!isGroup) return reply(mess.only.group)
 if (args.length < 1) return reply('Pilih gunting/batu/kertas')
 if (args[0] === 'gunting' ) {
