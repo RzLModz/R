@@ -1,7 +1,7 @@
 # SC-V5
-https://youtube.com/channel/UCcnWMxH0nUbArCCkqubUeHA
+https://youtube.com/channel/UCJi3qEvIX7AZyRowqSTnoig
 
-https://apidhani.herokuapp.com
+https://apiRzL.herokuapp.com
 
 jika mau add fitur lain silakan mampir ke
 rest api gw yg ada di atas
